@@ -113,6 +113,8 @@ void display_sorted(Student *students, int size){
         return;
     }
 
+    // Created a copy of the array and applied sort to it
+
     Student *sorted_students = malloc(size * sizeof(Student));
 
     if (sorted_students == NULL) {
