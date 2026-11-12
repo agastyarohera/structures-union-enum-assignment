@@ -67,7 +67,6 @@ int read_student_name(char name[50]){
 
         if (c != '\n' && c != EOF) {
 
-            // Discard remaining characters
             while ((c = getchar()) != '\n' && c != EOF) {
             }
 
