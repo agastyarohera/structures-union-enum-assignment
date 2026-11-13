@@ -133,6 +133,16 @@ void display_sorted(Student *students, int size){
 
 }
 
+void clear_input_buffer() {
+
+    int c;
+
+    while ((c = getchar()) != '\n' && c != EOF) {
+    }
+
+}
+
+
 int main() {
     int allocated_capacity;
 
@@ -171,8 +181,7 @@ int main() {
         if(scanf("%d", &query) != 1 ){
             printf("Invalid Choice!\n");
             
-            int c;
-            while ((c = getchar()) != '\n' && c != EOF);
+            clear_input_buffer();
             
             continue;
         }
@@ -203,8 +212,7 @@ int main() {
             if(scanf("%d", &roll_number) != 1){
                 printf("Invalid Input!\n");
 
-                int c;
-                while ((c = getchar()) != '\n' && c != EOF);
+                clear_input_buffer();
 
                 continue;
             }
@@ -219,9 +227,7 @@ int main() {
                 continue;
             }
 
-            int c;
-
-            while ((c = getchar()) != '\n' && c != EOF);
+            clear_input_buffer();
 
             if (!read_student_name(name)) {
                 continue;
@@ -231,8 +237,7 @@ int main() {
             if(scanf("%d", &age) != 1){
                 printf("Invalid Input!\n");
 
-                int c;
-                while ((c = getchar()) != '\n' && c != EOF);
+                clear_input_buffer();
 
                 continue;
             }
@@ -246,8 +251,7 @@ int main() {
             if(scanf("%f", &gpa) != 1){
                 printf("Invalid Input!\n");
 
-                int c;
-                while ((c = getchar()) != '\n' && c != EOF);
+                clear_input_buffer();
 
                 continue;
             }
@@ -280,8 +284,7 @@ int main() {
             if(scanf("%d", &roll_number) != 1){
                 printf("Invalid Input!\n");
 
-                int c;
-                while ((c = getchar()) != '\n' && c != EOF);
+                clear_input_buffer();
 
                 continue;
             }
@@ -310,8 +313,7 @@ int main() {
             if(scanf("%d", &roll_number) != 1){
                 printf("Invalid Input!\n");
 
-                int c;
-                while ((c = getchar()) != '\n' && c != EOF);
+                clear_input_buffer();
 
                 continue;
             }
@@ -321,9 +323,7 @@ int main() {
                 float gpa;
                 char name[50];
 
-                int c;
-
-                while ((c = getchar()) != '\n' && c != EOF);
+                clear_input_buffer();
 
                 if (!read_student_name(name)){
                     continue;
@@ -333,8 +333,7 @@ int main() {
                 if(scanf("%d", &age) != 1){
                     printf("Invalid Input!\n");
 
-                    int c;
-                    while ((c = getchar()) != '\n' && c != EOF);
+                    clear_input_buffer();
 
                     continue;
                 }
@@ -348,8 +347,7 @@ int main() {
                 if(scanf("%f", &gpa) != 1){
                     printf("Invalid Input!\n");
 
-                    int c;
-                    while ((c = getchar()) != '\n' && c != EOF);
+                    clear_input_buffer();
 
                     continue;
                 }
@@ -386,8 +384,7 @@ int main() {
             if(scanf("%d", &roll_number) != 1){
                 printf("Invalid Input!\n");
 
-                int c;
-                while ((c = getchar()) != '\n' && c != EOF);
+                clear_input_buffer();
 
                 continue;
             }
